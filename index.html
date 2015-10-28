@@ -3,50 +3,48 @@
 <head>
   <title>Concentration</title>
   <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="script.js"></script>
 </head>
+<body>
 <h1> Concentration Game </h1>
  <h2>Rules</h2>
-   <p>1. Match as many tiles as you can</p>
-   <p>2. If you miss one match then its the other players turn</p>
-   <p>3. Whom ever gets the most matches first wins<p>
-   <div class = "board">
+   <p id ="p1">1. Match as many tiles as you can</p>
+   <p id ="p1">2. Keep gussing until you find all of the matches</p>
+   <p id ="p1">3. If you get all the matches you win!<p>
+     <p id="p1">4. If you click once and try to click again and the letters dont match the original letter goes away </p>
+   <div id= "board">
+     <div class ="Time"></div>
+       <button class="Reset">Reset</button>
      <div class = "row1">
-      <div class = "Card1 Cards"></div>
-      <div class = "Card2  Cards"></div>
-      <div class = "Card3 Cards"></div>
-      <div class = "Card4  Cards"></div>
-      <div class = "Card5 Cards"></div>
+      <div class = "Card1 Cards"><p>E</p></div>
+      <div class = "Card2 Cards"><p>B</p></div>
+      <div class = "Card3 Cards"><p>C</p></div>
+      <div class = "Card4 Cards"><p>D</p></div>
+      <div class = "Card5 Cards"><p>A</p></div>
     </div>
     <div class = "row2">
-     <div class = "Card6 Cards"></div>
-     <div class = "Card7  Cards"></div>
-     <div class = "Card8 Cards"></div>
-     <div class = "Card9  Cards"></div>
-     <div class = "Card10 Cards"></div>
+     <div class = "Card6 Cards"><p>A</p></div>
+     <div class = "Card7 Cards"><p>C</p></div>
+     <div class = "Card8 Cards"><p>B</p></div>
+     <div class = "Card9 Cards"><p>E</p></div>
+     <div class = "Card10 Cards"><p>D</p></div>
+     </div>
+     <div class = "row3">
+      <div class = "Card11 Cards"><p>F</p></div>
+      <div class = "Card12 Cards"><p>H</p></div>
+      <div class = "Card13 Cards"><p>I</p></div>
+      <div class = "Card14 Cards"><p>J</p></div>
+      <div class = "Card15 Cards"><p>G</p></div>
+    </div>
+    <div class = "row4">
+     <div class = "Card16 Cards"><p>H</p></div>
+     <div class = "Card17 Cards"><p>F</p></div>
+     <div class = "Card18 Cards"><p>G</p></div>
+     <div class = "Card19 Cards"><p>J</p></div>
+     <div class = "Card20 Cards"><p>I</p></div>
    </div>
-   <div class = "row3">
-    <div class = "Card11 Cards"></div>
-    <div class = "Card12  Cards"></div>
-    <div class = "Card13 Cards"></div>
-    <div class = "Card14  Cards"></div>
-    <div class = "Card15 Cards"></div>
-  </div>
-  <div class = "row4">
-   <div class = "Card16 Cards"></div>
-   <div class = "Card17 Cards"></div>
-   <div class = "Card18 Cards"></div>
-   <div class = "Card19  Cards"></div>
-   <div class = "Card20 Cards"></div>
- </div>
- <div class = "row5">
-  <div class = "Card21 Cards"></div>
-  <div class = "Card22  Cards"></div>
-  <div class = "Card23 Cards"></div>
-  <div class = "Card24  Cards"></div>
-  <div class = "Card25 Cards"></div>
 </div>
-</div>
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<body>
+
+</body>
 </html>
