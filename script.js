@@ -18,6 +18,18 @@ $(".Cards p").fadeOut(2000);
       $(".Cards p").hide();
       console.log("you got it wrong")
 
+      Array.prototype.shuffle = function() {
+          var input = this;
+
+          for (var i = input.length-1; i >=0; i--) {
+
+              var randomIndex = Math.floor(Math.random()*(i+1));
+              var itemAtIndex = input[randomIndex];
+
+              input[randomIndex] = input[i];
+              input[i] = itemAtIndex;
+          }
+          return input;
       }
 
       var testArray = ["A","A","B","B","C","C","D","D","E","E","F","F","G","G","H","H","I","I","J","J"];
@@ -28,6 +40,21 @@ $(".Cards p").fadeOut(2000);
     $(".Reset").on("click", function(evt){
       location.reload();
       console.log("Reset")
+
+})
+
+var seconds = 0
+
+var timerId;
+
+var startButton = document.getElementById("ham")
+function updateTime(){
+seconds++
+document.getElementById("ham").innerHTML=seconds;
+}
+startButton.addEventListener("click", function(){
+  updateTime()
+  timerId = setInterval(updateTime,1000)
 })
 
 //
