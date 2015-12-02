@@ -9,6 +9,9 @@
 <body>
  <h1>Concentration Game</h1>
    <p id ="p1">1. Match as many tiles as you can</p>
+   <!-- You should only have 1 thing of a particular ID on a page.
+   Don't get IDs confused with classes, of which you can have any number.
+   Make sure you validate your HTML! http://validator.w3.org -->
    <p id ="p1">2. Keep gussing until you find all of the matches</p>
    <p id ="p1">3. If you get all the matches you win!<p>
      <p id="p1">4. If you click once and try to click again and the letters dont match the original letter goes away </p>
@@ -23,6 +26,13 @@
       <div class = "Card4 Cards"><p>D</p></div>
       <div class = "Card5 Cards"><p>A</p></div>
     </div>
+    <!-- Classes and IDs should almost always be lowercase. -->
+    <!-- If everything inside an element has the same class,
+    give the container element that class instead. For example:
+    <div class="row2 cards">
+      <div class="card6"><p>A</p></div>
+      ...
+    You can select all those elements in CSS with ".cards div"-->
     <div class = "row2">
      <div class = "Card6 Cards"><p>A</p></div>
      <div class = "Card7 Cards"><p>C</p></div>

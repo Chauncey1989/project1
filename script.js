@@ -2,6 +2,7 @@ $(document).ready(function() {
 var oldanswer;
 var counter = 2;
 $(".Cards p").fadeOut(2000);
+// Watch your indentation. Remember that Atom can auto-indent for you.
   $(".Cards").on("click", function() {
     counter = counter + 1;
     if(counter == 2){
@@ -45,16 +46,21 @@ $(".Cards p").fadeOut(2000);
 
 var seconds = 0
 
+// What does this timerId do?
 var timerId;
 
 var startButton = document.getElementById("ham")
 function updateTime(){
+  // Watch your indentation!
 seconds++
+// You could do this in jQuery with $("#ham").text(seconds);
 document.getElementById("ham").innerHTML=seconds;
+// Totally curious: Why "ham"?
 }
 startButton.addEventListener("click", function(){
   updateTime()
   timerId = setInterval(updateTime,1000)
+  // Nice!
 })
 
 //
